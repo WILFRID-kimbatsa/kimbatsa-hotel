@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                Hotel<br>
+                <small style="font-size: 0.8em;">Executive Luxury</small>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="propos.html">À propos</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                   <li><a href="gallery.html">GALERIE</a></li>
+                    <li><a href="conact.html" class="active">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CONTACTEZ-NOUS</h1>
+            <p>Nous sommes à votre disposition pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Informations de Contact</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Adresse</h3>
+                        <p>13 rue du pool<br>
+                        brazzaville 12345<br>
+                        République du congo</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Téléphone</h3>
+                        <p>Réception: +242064056097<br>
+                        Réservations: +242050819862 90<br>
+                        Urgences: +242068004201</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>info@hotelexecutive.com<br>
+                        reservations@hotelexecutive.com<br>
+                        kimbatsawilfrid09@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-content">
+                        <h3>Horaires d'ouverture</h3>
+                        <p>Réception: 24h/24, 7j/7<br>
+                        Service client: 8h - 22h<br>
+                        Concierge: 6h - 24h</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="reservation">Réservation</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="complaint">Réclamation</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="event">Événement privé</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Décrivez votre demande en détail..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <div class="map-placeholder">
+                🗺️ Carte interactive - Localisation de l'hôtel
+                <br><small>(Intégration Google Maps à prévoir)</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Hotel Executive Luxury. Tous droits réservés.| Conçu avec passion pour votre confort. wilfrid@media</p>
+    </footer>
+</body>
+</html>

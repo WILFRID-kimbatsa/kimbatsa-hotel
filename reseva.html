@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!-- Header -->
+    <header class="header6">
+        <div class="nav-container">
+            <div class="logo">
+                Hotel
+                <span>Executive Luxury</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="propos.html">À propos</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html"> GALERIE</a></li>
+                    <li><a href="conact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>RÉSERVATION</h1>
+                <p>Réservez votre séjour dans notre hôtel de luxe et profitez d'une expérience inoubliable. Nos équipes sont à votre disposition pour personnaliser votre séjour selon vos besoins.</p>
+            </div>
+
+            <!-- Reservation Container -->
+            <div class="reservation-container">
+                <!-- Reservation Form -->
+                <div class="reservation-form">
+                    <h2 class="form-title">Formulaire de Réservation</h2>
+                    
+                    <form action="#" method="POST">
+                        <!-- Informations Personnelles -->
+                        <div class="form-section">
+                            <h3>Informations Personnelles</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="prenom">Prénom *</label>
+                                    <input type="text" id="prenom" name="prenom" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom">Nom *</label>
+                                    <input type="text" id="nom" name="nom" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone *</label>
+                                    <input type="tel" id="telephone" name="telephone" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nationalite">Nationalité</label>
+                                    <input type="text" id="nationalite" name="nationalite">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date_naissance">Date de naissance</label>
+                                    <input type="date" id="date_naissance" name="date_naissance">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Détails du Séjour -->
+                        <div class="form-section">
+                            <h3>Détails du Séjour</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date_arrivee">Date d'arrivée *</label>
+                                    <input type="date" id="date_arrivee" name="date_arrivee" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date_depart">Date de départ *</label>
+                                    <input type="date" id="date_depart" name="date_depart" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nb_adultes">Nombre d'adultes *</label>
+                                    <select id="nb_adultes" name="nb_adultes" required>
+                                        <option value="">Sélectionner</option>
+                                        <option value="1">1 adulte</option>
+                                        <option value="2">2 adultes</option>
+                                        <option value="3">3 adultes</option>
+                                        <option value="4">4 adultes</option>
+                                        <option value="5">5+ adultes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nb_enfants">Nombre d'enfants</label>
+                                    <select id="nb_enfants" name="nb_enfants">
+                                        <option value="0">0 enfant</option>
+                                        <option value="1">1 enfant</option>
+                                        <option value="2">2 enfants</option>
+                                        <option value="3">3 enfants</option>
+                                        <option value="4">4+ enfants</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Type de Chambre -->
+                        <div class="form-section">
+                            <h3>Choisissez votre chambre</h3>
+                            <div class="room-options">
+                                <div class="room-option">
+                                    <input type="radio" id="standard" name="type_chambre" value="standard">
+                                    <label for="standard" class="room-card">
+                                        <h4>Chambre Standard</h4>
+                                        <div class="price">€95/nuit</div>
+                                        <div class="features">
+                                            • 25m² • Vue jardin<br>
+                                            • WiFi gratuit • Climatisation<br>
+                                            • Salle de bain privée
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="room-option">
+                                    <input type="radio" id="deluxe" name="type_chambre" value="deluxe">
+                                    <label for="deluxe" class="room-card">
+                                        <h4>Chambre Deluxe</h4>
+                                        <div class="price">€145/nuit</div>
+                                        <div class="features">
+                                            • 35m² • Vue océan<br>
+                                            • Balcon privé • Minibar<br>
+                                            • Service en chambre 24h
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="room-option">
+                                    <input type="radio" id="suite" name="type_chambre" value="suite">
+                                    <label for="suite" class="room-card">
+                                        <h4>Suite Familiale</h4>
+                                        <div class="price">45000f/nuit</div>
+                                        <div class="features">
+                                            • 50m² • Salon séparé<br>
+                                            • 2 salles de bain<br>
+                                            • Jusqu'à 6 personnes
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="room-option">
+                                    <input type="radio" id="presidentielle" name="type_chambre" value="presidentielle">
+                                    <label for="presidentielle" class="room-card">
+                                        <h4>Suite Présidentielle</h4>
+                                        <div class="price">65000f/nuit</div>
+                                        <div class="features">
+                                            • 80m² • Vue panoramique<br>
+                                            • Jacuzzi privé • Butler<br>
+                                            • Accès VIP au spa
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services Extras -->
+                        <div class="form-section">
+                            <h3>Services Supplémentaires</h3>
+                            <div class="services-extras">
+                                <div class="service-item">
+                                    <input type="checkbox" id="petit_dejeuner" name="services[]" value="petit_dejeuner">
+                                    <label for="petit_dejeuner">Petit-déjeuner</label>
+                                    <span class="service-price">+12000F/jour</span>
+                                </div>
+                                <div class="service-item">
+                                    <input type="checkbox" id="spa_acces" name="services[]" value="spa_acces">
+                                    <label for="spa_acces">Accès Spa</label>
+                                    <span class="service-price">+15000F/jour</span>
+                                </div>
+                                <div class="service-item">
+                                    <input type="checkbox" id="parking" name="services[]" value="parking">
+                                    <label for="parking">Parking privé</label>
+                                    <span class="service-price">+5000F/jour</span>
+                                </div>
+                                <div class="service-item">
+                                    <input type="checkbox" id="navette" name="services[]" value="navette">
+                                    <label for="navette">Navette aéroport</label>
+                                    <span class="service-price">+25000F</span>
+                                </div>
+                                <div class="service-item">
+                                    <input type="checkbox" id="diner" name="services[]" value="diner">
+                                    <label for="diner">Dîner gastronomique</label>
+                                    <span class="service-price">+65000f/jour</span>
+                                </div>
+                                <div class="service-item">
+                                    <input type="checkbox" id="excursion" name="services[]" value="excursion">
+                                    <label for="excursion">Excursions guidées</label>
+                                    <span class="service-price">+90000F/jour</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demandes Spéciales -->
+                        <div class="form-section">
+                            <h3>Demandes Spéciales</h3>
+                            <div class="form-group full-width">
+                                <label for="demandes_speciales">Commentaires ou demandes particulières</label>
+                                <textarea id="demandes_speciales" name="demandes_speciales" placeholder="Lune de miel, anniversaire, allergies alimentaires, préférences particulières..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn">Confirmer la Réservation</button>
+                    </form>
+                </div>
+
+                <!-- Reservation Summary -->
+                <div class="sidebar">
+                    <div class="reservation-summary">
+                        <h3 class="summary-title">Récapitulatif</h3>
+                        <div class="summary-item">
+                            <span class="summary-label">Chambre sélectionnée:</span>
+                            <span class="summary-value">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Dates:</span>
+                            <span class="summary-value">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Nombre de nuits:</span>
+                            <span class="summary-value">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Invités:</span>
+                            <span class="summary-value">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Sous-total:</span>
+                            <span class="summary-value">0F</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Services extras:</span>
+                            <span class="summary-value">0F</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Total:</span>
+                            <span class="summary-value">0F</span>
+                        </div>
+                    </div>
+
+                    <div class="hotel-info">
+                        <h3>Pourquoi nous choisir ?</h3>
+                        <div class="info-item">Annulation gratuite jusqu'à 48h</div>
+                        <div class="info-item">Meilleur prix garanti</div>
+                        <div class="info-item">Service client 24h/7j</div>
+                        <div class="info-item">WiFi haut débit gratuit</div>
+                        <div class="info-item">Piscine et spa inclus</div>
+                        <div class="info-item">Petit-déjeuner buffet disponible</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+     <footer class="footer">
+        <p>&copy; 2025 Hotel Executive Luxury. Tous droits réservés.| Conçu avec passion pour votre confort. wilfrid@media</p>
+    </footer>
+</body>
+</html>
